@@ -9,12 +9,12 @@
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="#" alt="Логотип сайта о Седоне.">
+        <img class="header-logo" src="#" alt="Логотип сайта о Седоне.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -36,10 +36,13 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <span class="favorites-amount">
+                12
+              </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button button-brown" href="#">Хочу сюда!</a>
+            <a class="button button-1" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -47,14 +50,8 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">
-        Добро пожаловать в великолепную Седону!
-        <q>
-          Потому что Гранд-Каньон - отстой!
-        </q>
+        Сайт о городе Седона.
       </h1>
-      <!-- Здесь есть сомнения. Решил сделать h1 скрытым заголовком, взятым из картинки. Скрин-ридер его прочтет, но так же прочтет и альт
-        к этой картинке и получится задвоение. Но если убрать альт, то пользователи, не использующие скрин-ридеры, не увидят ничего,
-         в случае, если картинка не прогрузилась. Как же тут поступить? -->
       <img class="main-index-image" src="#"
         alt="Добро пожаловать в великолепную Седону! 'Потому что Гранд-Каньон - отстой!'">
       <section class="advantages">
@@ -108,16 +105,16 @@
         <h2 class="hotel-search-heading">Заинтересовались?</h2>
         <p class="hotel-search-subheading">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <a class="button button-brown" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="button button-1" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="newsletter">
+      <section class="newsletter newsletter-illustrated">
         <h2 class="newsletter-heading">Подпишитесь на рассылку</h2>
         <p class="newsletter-subheading">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <label for="newsletter-email">Email</label>
           <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
             required>
-          <button class="button button-blue" type="submit">Подписаться</button>
+          <button class="button button-2" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -126,17 +123,17 @@
         <h2 class="visually-hidden">Наши социальные сети и медиа</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="social-button" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="social-button" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -144,8 +141,8 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <address class="footer-contacts-adsress">
-          <a class="footer-contacts-adsress-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <address class="footer-contacts-address">
+          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
       </section>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
