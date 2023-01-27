@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="#" alt="Логотип сайта о Седоне.">
       </a>
@@ -45,7 +45,7 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -60,56 +60,58 @@
             <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
         </ul>
       </header>
-      <section class="catalog-hotels">
+      <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-form-group">
+            <legend class="filter-form-title">Инфраструктура</legend>
+            <ul class="filter-form-list">
+              <li class="filter-form-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="filter-form-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked>Парковка
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="filter-form-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
+          <fieldset class="filter-form-group">
+            <legend class="filter-form-title">Тип жилья</legend>
+            <ul class="filter-form-list">
+              <li class="filter-form-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>Гостиница
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="filter-form-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="motel">Мотель
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="filter-form-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="apartments">Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <fieldset class="filter-form-group">
+            <legend class="filter-form-title">Стоимость, ₽:</legend>
           </fieldset>
           <button class="button button-2" type="submit">Применить</button>
           <button class="button button-3" type="reset">Сбросить</button>
         </form>
-        <h3 class="catalog-filter-result">Найдено гостиниц: 38</h3>
+      </section>
+      <section class="catalog-hotels" data-test="catalog">
+        <h2 class="catalog-hotels-result">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешевое</option>
@@ -128,7 +130,7 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="#" alt="">
-              <h4 class="hotel-card-title">Amara Resort & Spa</h4>
+              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <!-- Здесь при клике на "Гостиница" срабатывает фильтр по типу жилья-гостиница и выдается список -->
             <a class="button" href="#">Гостиница</a>
@@ -141,7 +143,7 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="#" alt="">
-              <h4 class="hotel-card-title">Villas at Poco Diablo</h4>
+              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <a class="button" href="#">Гостиница</a>
             <span class="hotel-card-price">От 5000 ₽</span>
@@ -153,7 +155,7 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="#" alt="">
-              <h4 class="hotel-card-title">Desert Quail Inn</h4>
+              <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <a class="button" href="#">Гостиница</a>
             <span class="hotel-card-price">От 2500 ₽</span>
@@ -165,7 +167,7 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="#" alt="">
-              <h4 class="hotel-card-title">GreenTree Inn</h4>
+              <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <a class="button" href="#">Гостиница</a>
             <span class="hotel-card-price">От 1500 ₽</span>
@@ -198,7 +200,7 @@
         </ul>
       </section>
 
-      <section class="newsletter newsletter-inner">
+      <section class="newsletter newsletter-inner" data-test="subscribe">
         <h2 class="newsletter-heading">Подпишитесь на рассылку</h2>
         <p class="newsletter-subheading">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -210,7 +212,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Наши социальные сети и медиа</h2>
         <ul class="footer-social-list">
