@@ -34,7 +34,6 @@ body {
 }
 
 /* Links */
-
 .navigation-link {
   color: #000;
   text-decoration: none;
@@ -51,6 +50,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  border-color: transparent;
 }
 
 .button-1 {
@@ -58,7 +58,6 @@ body {
 }
 
 /* Main */
-
 .main-index {
   text-align: center;
 }
@@ -136,18 +135,17 @@ body {
 .field {
   font-family: inherit;
   background-color: #F2F2F2;
+  color:#000;
 }
 
 /* Button */
 .button-2 {
   background-color: #82B3D3;
-  border: transparent ;
 }
 
 .button.newsletter {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
-  border-color: transparent;
 }
 
 /* Footer */
@@ -218,5 +216,40 @@ body {
 /* Button */
 .button-3 {
   background-color: transparent;
-  border: transparent;
+}
+
+/* Catalog */
+.select-control {
+  font-family: inherit;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Links */
+.hotel-card-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.hotel-card-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+/* Button */
+
+.button-4 {
+  background-color: #7DB54F;
+}
+
+.button-5 {
+  color:#333;
+  background-color: #F2F2F2;
+  font-weight: 400;
+}
+
+.star {
+  background-image: url("../images/icons/star-icon.svg");
 }
