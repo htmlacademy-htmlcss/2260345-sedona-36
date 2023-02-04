@@ -14,6 +14,8 @@
   font-display: swap;
 }
 
+
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -30,6 +32,7 @@ body {
   color:#fff;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -46,6 +49,7 @@ body {
 .button.newsletter {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
+  border-color: transparent;
 }
 
 .button.big {
@@ -137,4 +141,19 @@ body {
   background-image: url("../images/newsletter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+.field {
+  font-family: inherit;
+  background-color: #F2F2F2;
+}
+
+/* Footer */
+.footer-contacts-address-phone {
+  background-color: #fff;
+  color:#000;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
 }
