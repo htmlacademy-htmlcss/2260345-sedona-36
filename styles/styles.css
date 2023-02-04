@@ -26,7 +26,22 @@ body {
   margin: 0;
 }
 
-/* Buttons */
+/* Header */
+
+.page-header {
+  font-size: 20px;
+  line-height: 24px
+}
+
+/* Links */
+
+.navigation-link {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Button */
 .button {
   font-family: inherit;
   color:#fff;
@@ -42,49 +57,19 @@ body {
   background-color: #756157;
 }
 
-.button-2 {
-  background-color: #82B3D3;
-}
-
-.button.newsletter {
-  background-color: #82B3D3;
-  border-radius: 0 4px 4px 0;
-  border-color: transparent;
-}
-
-.button.big {
-  font-size: 20px;
-  line-height: 36px;
-}
-
-/* Header */
-
-.page-header {
-  font-size: 20px;
-  line-height: 24px
-}
-
-.navigation-link {
-  color: #000;
-  text-decoration: none;
-  text-align: center;
-}
-
-
-
 /* Main */
 
 .main-index {
   text-align: center;
-  background-color: #fff;
 }
+
 /* Hero block */
 .hero {
   background-color: #fff;
   color:#000;
   background-image:  url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% auto, 100% auto;
+  background-size: cover, cover;
   background-position: bottom center, center;
 }
 
@@ -92,18 +77,18 @@ body {
   padding: 30px;
 }
 
-/* Advantages */
-.advantages-list {
+/* Lists */
+.non-type-list {
   list-style-type: none;
 }
-
+/* Advantages */
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333;
 }
-
+/* Title */
 .heading {
   font-size: 30px;
   line-height: 36px;
@@ -136,11 +121,16 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+/* Index-search */
+.button.big {
+  font-size: 20px;
+  line-height: 36px;
+}
 /* Subscribe */
 .newsletter.illustrated {
   background-image: url("../images/newsletter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .field {
@@ -148,12 +138,85 @@ body {
   background-color: #F2F2F2;
 }
 
+/* Button */
+.button-2 {
+  background-color: #82B3D3;
+  border: transparent ;
+}
+
+.button.newsletter {
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  border-color: transparent;
+}
+
 /* Footer */
 .footer-contacts-address-phone {
-  background-color: #fff;
   color:#000;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-decoration: none;
+}
+
+/* Filter */
+.catalog-filter {
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  color:#fff;
+}
+
+/* Title */
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 78px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-link {
+  color:#fff;
+  text-decoration: none;
+}
+
+.breadcrumbs-icon {
+  background-image: url("../images/icons/breadcrumbs-home-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-arrow {
+  display: block;
+  background-color: #333;
+  background-image: url("../images/icons/breadcrumbs-arrow-icon.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+/* Title */
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.filter-form-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.filter-form-group {
+  border: transparent;
+}
+
+/* Button */
+.button-3 {
+  background-color: transparent;
+  border: transparent;
 }
