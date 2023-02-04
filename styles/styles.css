@@ -24,13 +24,33 @@ body {
   margin: 0;
 }
 
+/* Buttons */
 .button {
+  font-family: inherit;
   color:#fff;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+}
+
+.button-1 {
+  background-color: #756157;
+}
+
+.button-2 {
+  background-color: #82B3D3;
+}
+
+.button.newsletter {
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
+}
+
+.button.big {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* Header */
@@ -46,20 +66,18 @@ body {
   text-align: center;
 }
 
-.button-1 {
-  background-color: #756157;
-}
+
 
 /* Main */
 
 .main-index {
   text-align: center;
   background-color: #fff;
-
 }
-
+/* Hero block */
 .hero {
   background-color: #fff;
+  color:#000;
   background-image:  url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100% auto;
@@ -68,4 +86,55 @@ body {
 
 .main-index-image{
   padding: 30px;
+}
+
+/* Advantages */
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+.heading {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 22x;
+  line-height: 26px;
+  color: #333;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.illustrated {
+  color: #fff;
+  background-color: #82B3D3;
+}
+
+.illustrated .subheading, .illustrated .advantages-description {
+  color:#fff;
+}
+
+.advantages-item:nth-child(odd):not(.illustrated) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* Subscribe */
+.newsletter.illustrated {
+  background-image: url("../images/newsletter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
