@@ -253,3 +253,21 @@ body {
 .star {
   background-image: url("../images/icons/star-icon.svg");
 }
+
+/* Pagination */
+.pagination-show-more {
+font-weight: 400;
+font-size: 22x;
+line-height: 26px;
+color: #000;
+}
+
+/* Link */
+.pagination-link {
+  text-decoration: none;
+}
+
+/* Newsletter-inner */
+.newsletter-inner {
+  text-align: center;
+}
