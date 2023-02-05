@@ -43,7 +43,7 @@ body {
 /* Button */
 .button {
   font-family: inherit;
-  color:#fff;
+  color: #fff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -57,6 +57,12 @@ body {
   background-color: #756157;
 }
 
+.favorites-amount {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #7DB54F;
+}
+
 /* Main */
 .main-index {
   text-align: center;
@@ -65,7 +71,7 @@ body {
 /* Hero block */
 .hero {
   background-color: #fff;
-  color:#000;
+  color: #000;
   background-image:  url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
@@ -112,7 +118,8 @@ body {
   background-color: #82B3D3;
 }
 
-.illustrated .subheading, .illustrated .advantages-description {
+.illustrated .subheading,
+.illustrated .advantages-description {
   color:#fff;
 }
 
@@ -135,7 +142,7 @@ body {
 .field {
   font-family: inherit;
   background-color: #F2F2F2;
-  color:#000;
+  color: #000;
 }
 
 /* Button */
@@ -150,7 +157,7 @@ body {
 
 /* Footer */
 .footer-contacts-address-phone {
-  color:#000;
+  color: #000;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -163,7 +170,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #333;
-  color:#fff;
+  color: #fff;
 }
 
 /* Title */
@@ -174,7 +181,7 @@ body {
 
 /* Breadcrumbs */
 .breadcrumbs-link {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -245,7 +252,7 @@ body {
 }
 
 .button-5 {
-  color:#333;
+  color: #333;
   background-color: #F2F2F2;
   font-weight: 400;
 }
@@ -256,10 +263,10 @@ body {
 
 /* Pagination */
 .pagination-show-more {
-font-weight: 400;
-font-size: 22x;
-line-height: 26px;
-color: #000;
+  font-weight: 400;
+  font-size: 22x;
+  line-height: 26px;
+  color: #000;
 }
 
 /* Link */
