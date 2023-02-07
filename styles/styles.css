@@ -20,7 +20,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
   background-color: #fff;
   margin: 0;
@@ -30,7 +30,8 @@ body {
 
 .page-header {
   font-size: 20px;
-  line-height: 24px
+  line-height: 24px;
+  font-weight: 700;
 }
 
 /* Links */
@@ -88,7 +89,6 @@ body {
 }
 /* Advantages */
 .advantages-description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333;
@@ -101,7 +101,6 @@ body {
 }
 
 .subheading {
-  font-weight: 400;
   font-size: 22x;
   line-height: 26px;
   color: #333;
@@ -208,12 +207,12 @@ body {
 .filter-form-title {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .control {
   font-size: 18px;
   line-height: 23px;
-  font-weight: 400;
 }
 
 .filter-form-group {
@@ -239,7 +238,6 @@ body {
 }
 
 .hotel-card-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333;
@@ -262,6 +260,10 @@ body {
 }
 
 /* Pagination */
+.pagination-current {
+  font-weight: 700;
+}
+
 .pagination-show-more {
   font-weight: 400;
   font-size: 22x;
