@@ -196,6 +196,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .subheading {
@@ -254,6 +255,14 @@ body {
 }
 
 /* Index-search */
+.hotel-search {
+  padding: 96px 304px;
+}
+.hotel-search .hotel-search-subheading {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
 .button.big {
   font-size: 20px;
   line-height: 36px;
