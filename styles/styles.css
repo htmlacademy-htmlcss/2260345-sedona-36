@@ -14,25 +14,83 @@
   font-display: swap;
 }
 
-
+html {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #000;
   background-color: #fff;
-  margin: 0;
+  outline: 5px solid tomato;
+  outline-offset: -5px;
 }
+
+
 
 /* Header */
 
 .page-header {
-  font-size: 20px;
+  display: flex;
   line-height: 24px;
   font-weight: 700;
+  width: 1200px;
+  z-index: 1;
 }
+
+/* Logo */
+.header-logo {
+  margin-left: 70px;
+  margin-bottom: -6px;
+}
+
+.navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 892px;
+  margin-left: 28px;
+  margin-right: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  width: 339px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-item-current {
+  border-bottom: 1px solid #756257;
+}
+
+.navigation-user {
+  justify-content: space-between;
+  width: 315px;
+}
+/* Visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
 
 /* Links */
 .navigation-link {
@@ -69,6 +127,10 @@ body {
   text-align: center;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 /* Hero block */
 .hero {
   background-color: #fff;
@@ -88,6 +150,8 @@ body {
   list-style-type: none;
 }
 /* Advantages */
+
+
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
