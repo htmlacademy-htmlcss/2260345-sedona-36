@@ -200,7 +200,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .subheading {
@@ -426,6 +425,7 @@ body {
 .catalog-sort-wrapper {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .catalog-hotels-result{
