@@ -114,6 +114,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-color: transparent;
+  border-radius: 4px;
 }
 
 .button-1 {
@@ -298,7 +299,7 @@ body {
   margin: 20px auto 54px;
 }
 
-/* Index Footer */
+/*Footer */
 .page-footer {
   display: flex;
   justify-content: space-between;
@@ -322,6 +323,9 @@ body {
 
 /* Filter */
 .catalog-filter {
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 35px 70px 70px;
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,12 +334,20 @@ body {
 }
 
 /* Title */
-.inner-header-title {
+.catalog-filter-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   font-weight: 78px;
+  width: 494px;
+  line-height: 78px;
 }
 
 /* Breadcrumbs */
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
 .breadcrumbs-link {
   color: #fff;
   text-decoration: none;
@@ -365,6 +377,31 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+}
+
+/* Form */
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infrastructure-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 191px;
+  height: 104px;
 }
 
 .control {
