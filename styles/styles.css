@@ -19,9 +19,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   width: 1200px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -34,6 +31,12 @@ body {
   outline-offset: -5px;
 }
 
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .image {
   display: block;
   border: none;
@@ -44,15 +47,17 @@ body {
 
 .page-header {
   display: flex;
+  box-sizing: border-box;
   line-height: 24px;
   font-weight: 700;
   width: 1200px;
   z-index: 1;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 /* Logo */
 .header-logo {
-  margin-left: 70px;
   margin-bottom: -6px;
 }
 
@@ -61,15 +66,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 892px;
-  margin-left: 28px;
-  margin-right: 70px;
+  padding-left: 44px;
+  /* width: 892px; */
 }
 
 .navigation-list {
   display: flex;
-  justify-content: space-around;
-  width: 339px;
+  justify-content: space-between;
+  gap: 32px;
+  /* width: 339px; */
   padding: 0;
   margin: 0;
 }
@@ -78,10 +83,11 @@ body {
   border-bottom: 1px solid #756257;
 }
 
-.navigation-user {
-  /* justify-content: space-between; */
+/* .navigation-user {
+  justify-content: space-between;
   width: 315px;
-}
+} */
+
 /* Visually-hidden */
 .visually-hidden {
   position: absolute;
@@ -94,7 +100,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 /* Links */
 .navigation-link {
@@ -105,7 +111,6 @@ body {
 
 /* Button */
 .button {
-  box-sizing: border-box;
   width: 140px;
   height: 36px;
   font-family: inherit;
@@ -120,7 +125,7 @@ body {
   border-radius: 4px;
 }
 
-.button-1 {
+.button-primary {
   background-color: #756157;
 }
 
@@ -143,7 +148,7 @@ body {
 .hero {
   background-color: #fff;
   color: #000;
-  background-image:  url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: bottom center, center;
@@ -161,6 +166,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* Advantages */
 .advantages-heading-wrapper {
   width: 1200px;
@@ -239,7 +245,7 @@ body {
 
 .illustrated .subheading,
 .illustrated .advantages-description {
-  color:#fff;
+  color: #fff;
 }
 
 .advantages-item:nth-child(odd):not(.illustrated) {
@@ -260,19 +266,19 @@ body {
 .hotel-search {
   padding: 96px 304px;
 }
+
 .hotel-search .hotel-search-subheading {
   margin: 20px auto 54px;
 }
 
-.button.big {
+.button-big {
   font-size: 20px;
   line-height: 36px;
 }
-/* Subscribe */
+
 .newsletter {
   padding: 96px 258px 104px 258px;
 }
-
 
 .newsletter.illustrated {
   background-image: url("../images/newsletter-background.jpg");
@@ -287,13 +293,15 @@ body {
 }
 
 /* Button */
-.button-2 {
+.button-secondary {
   background-color: #82B3D3;
 }
 
 .newsletter-button {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .newsletter-subheading {
@@ -311,7 +319,6 @@ body {
 .footer-social {
   width: 142px;
 }
-
 
 .footer-contacts-address-phone {
   width: 331px;
@@ -367,11 +374,7 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
 /* Title */
-
-
 .filter-form-title {
   font-size: 20px;
   line-height: 24px;
@@ -388,6 +391,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .price-wrapper {
   display: flex;
   justify-content: space-between;
@@ -413,7 +417,7 @@ body {
 }
 
 /* Button */
-.button-3 {
+.button-transparent {
   background-color: transparent;
 }
 
@@ -427,10 +431,6 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-
-/* .catalog-hotels-result {
-  margin-right: auto;
-} */
 
 .select-control {
   font-family: inherit;
@@ -489,21 +489,22 @@ body {
   margin-bottom: 16px;
 }
 
-/* Button */
-
-.hotel-card .button-2,
-.hotel-card .button-5 {
-  margin-left: auto;
-}
-
-.button-4 {
-  background-color: #7DB54F;
-}
-
-.button-5 {
+.hotel-rating {
+  font-family: inherit;
   color: #333;
   background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+}
+
+.button-active {
+  background-color: #7DB54F;
 }
 
 .star {
@@ -516,14 +517,17 @@ body {
   gap: 8px;
 }
 
-.pagination .button {
+.pagination-button {
   display: block;
+  background-color: #82B3D3;;
+  font-weight: 400;
   width: 60px;
   height: 60px;
 }
 
 .pagination-current {
   font-weight: 700;
+  color: #000;
 }
 
 .pagination-show-more {
