@@ -79,7 +79,7 @@ body {
 }
 
 .navigation-user {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 315px;
 }
 /* Visually-hidden */
@@ -428,9 +428,9 @@ body {
   align-items: center;
 }
 
-.catalog-hotels-result{
+/* .catalog-hotels-result {
   margin-right: auto;
-}
+} */
 
 .select-control {
   font-family: inherit;
