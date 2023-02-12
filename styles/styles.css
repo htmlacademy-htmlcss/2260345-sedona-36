@@ -298,8 +298,21 @@ body {
   margin: 20px auto 54px;
 }
 
-/* Footer */
+/* Index Footer */
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 70px 35px;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+
 .footer-contacts-address-phone {
+  width: 331px;
+  height: 40px;
   color: #000;
   font-size: 40px;
   line-height: 40px;
