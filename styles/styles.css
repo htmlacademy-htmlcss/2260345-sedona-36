@@ -250,7 +250,6 @@ body {
 }
 
 .advantages-services-heading-wrapper .advantages-subheading {
-  margin: o;
   margin-top: 20px;
 }
 
@@ -259,8 +258,7 @@ body {
   padding: 96px 304px;
 }
 .hotel-search .hotel-search-subheading {
-  margin-top: 20px;
-  margin-bottom: 54px;
+  margin: 20px auto 54px;
 }
 
 .button.big {
@@ -268,6 +266,11 @@ body {
   line-height: 36px;
 }
 /* Subscribe */
+.newsletter {
+  padding: 96px 258px 104px 258px;
+}
+
+
 .newsletter.illustrated {
   background-image: url("../images/newsletter-background.jpg");
   background-repeat: no-repeat;
@@ -285,9 +288,14 @@ body {
   background-color: #82B3D3;
 }
 
-.button.newsletter {
+.newsletter-button {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
+}
+
+.newsletter-subheading {
+  width: 475px;
+  margin: 20px auto 54px;
 }
 
 /* Footer */
