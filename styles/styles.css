@@ -19,14 +19,14 @@ html {
 }
 
 body {
-  width: 1200px;
+  width: 1280px;
+  background-color: #F2F2F2;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #000;
-  background-color: #fff;
   outline: 5px solid tomato;
   outline-offset: -5px;
 }
@@ -35,6 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 1200px;
+  background-color: #fff;
 }
 
 .image {
@@ -82,11 +84,6 @@ body {
 .navigation-item-current {
   border-bottom: 1px solid #756257;
 }
-
-/* .navigation-user {
-  justify-content: space-between;
-  width: 315px;
-} */
 
 /* Visually-hidden */
 .visually-hidden {
