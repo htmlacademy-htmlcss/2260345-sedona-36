@@ -176,7 +176,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: #7DB54F;
-  margin-bottom: 33px;
+  margin-top: 11px;
   margin-left: 20px;
 }
 
@@ -401,7 +401,7 @@ body {
 }
 
 .footer-social {
-  width: 380px;
+  min-width: 142px;
 }
 
 .footer-social-list {
@@ -429,6 +429,8 @@ body {
 }
 
 .footer-contacts-address-phone {
+  font-family: inherit;
+  font-style: normal;
   width: 331px;
   height: 40px;
   color: #000;
@@ -462,12 +464,28 @@ body {
 
 /* Breadcrumbs */
 .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
   color: #fff;
   text-decoration: none;
+}
+
+.breadcrumbs-item-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.home {
+  background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat center;
+}
+
+.arrow {
+  background: url("../images/icons/breadcrumbs-arrow-icon.svg") no-repeat center;
 }
 
 .breadcrumbs-icon {
@@ -487,12 +505,17 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 32px;
 }
 
 /* Form */
 .filter-form {
   display: flex;
   justify-content: space-between;
+}
+
+.filter-form-item:not(:nth-last-child(1)) {
+  margin-bottom: 16px;
 }
 
 .infrastructure-wrapper {
@@ -509,7 +532,7 @@ body {
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 32px;
   align-self: flex-end;
   width: 191px;
 }
@@ -520,6 +543,8 @@ body {
 }
 
 .filter-form-group {
+  display: flex;
+  flex-direction: column;
   border: transparent;
 }
 
@@ -535,14 +560,55 @@ body {
 
 .catalog-sort-wrapper {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.catalog-hotels-result {
+  display: inline-block;
+  align-self: center;
+  margin: 0;
+}
+
+.select-switchers {
+  display: flex;
+  gap: 8px;
+}
+
+.switcher {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.switcher-current {
+  border-color: #000;
 }
 
 .select-control {
+  width: 292px;
   font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #fff;
   color: #000;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  margin-right: 62px;
+}
+
+.switcher-show-cards {
+  background: url("../images/icons/view-icon-1.svg") no-repeat center;
+}
+
+.switcher-show-big-cards {
+  background: url("../images/icons/view-icon-2.svg") no-repeat center;
+}
+
+.switcher-show-list {
+  background: url("../images/icons/view-icon-3.svg") no-repeat center;
 }
 
 .hotel-list {
