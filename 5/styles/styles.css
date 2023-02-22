@@ -744,6 +744,7 @@ body {
 /* Pagination */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
