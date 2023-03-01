@@ -397,6 +397,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 45px 70px 35px;
 }
 
@@ -407,6 +408,7 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .social-button {
@@ -439,6 +441,10 @@ body {
   line-height: 40px;
   text-align: center;
   text-decoration: none;
+}
+
+.htmlacademy-link {
+  align-self: center;
 }
 
 /* Filter */
@@ -626,12 +632,6 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows:
-    212px
-    auto
-    auto
-    auto
-    auto; */
   grid-template-areas:
     "img     img"
     "title   title"
