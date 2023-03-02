@@ -296,7 +296,8 @@ body {
 }
 
 .advantages-item-services {
-  padding: 183px 85px 81px;
+  padding-top: 183px;
+  padding-bottom: 81px;
 }
 
 .advantages-item:nth-child(odd):not(.illustrated) {
@@ -390,6 +391,7 @@ body {
   border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
+  cursor: pointer;
 }
 
 /*Footer */
