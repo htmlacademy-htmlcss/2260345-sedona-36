@@ -693,6 +693,7 @@ body {
 .select-switchers {
   display: flex;
   gap: 8px;
+  position: relative;
 }
 
 .switcher {
@@ -717,7 +718,7 @@ body {
 }
 
 .select-control {
-  position: relative;
+  appearance: none;
   width: 292px;
   font-family: inherit;
   font-size: 18px;
@@ -728,6 +729,7 @@ body {
   padding: 14px 20px;
   border-radius: 4px;
   margin-right: 62px;
+  background: url("../images/icons/select-filter-arrow-icon.svg") no-repeat 260px 50%;
 }
 
 .select-control:hover {
@@ -744,19 +746,6 @@ body {
 
 .select-control:disabled {
   outline-color: rgba(0, 0, 0, 0.3);
-}
-
-.select-control::after {
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 7px;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("../images/icons/select-filter-arrow-icon.svg") no-repeat center;
 }
 
 .switcher-show-cards {
