@@ -647,7 +647,57 @@ body {
 .filter-form-group {
   display: flex;
   flex-direction: column;
-  border: transparent;
+  border: none;
+}
+
+.filter-form-group-price {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 286px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  border: none;
+  box-sizing: border-box;
+}
+
+.price-field {
+  box-sizing: border-box;
+  appearance: none;
+  padding: 12px 20px;
+  width: 142px;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.price-field::-webkit-outer-spin-button,
+.price-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.price-field {
+  appearance: textfield;
+}
+
+.min-price-field {
+  border-radius: 4px 0 0 4px;
+  border: none;
+  margin-right: 2px;
+}
+
+.max-price-field {
+  border-radius: 0 4px 4px 0;
+  border: none;
+}
+
+.price-slider {
+  flex-grow: 1;
 }
 
 .button-transparent {

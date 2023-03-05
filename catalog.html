@@ -124,8 +124,11 @@
                 </fieldset>
               </div>
               <div class="price-wrapper">
-                <fieldset class="filter-form-group">
+                <fieldset class="filter-form-group-price">
                   <legend class="filter-form-title">Стоимость, ₽:</legend>
+                  <input class="price-field min-price-field" type="number" value="0" min="0">
+                  <input class="price-field max-price-field" type="number" value="9000" min="1">
+                  <input class="price-slider" type="range">
                 </fieldset>
                 <div class="buttons-wrapper">
                   <button class="button button-secondary" type="submit">Применить</button>
