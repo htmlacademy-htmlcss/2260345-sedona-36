@@ -456,8 +456,6 @@ body {
   background-color: #68A2CA;
 }
 
-
-
 .page-footer {
   display: flex;
   flex-wrap: wrap;
@@ -581,12 +579,12 @@ body {
   height: 26px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-item {
   position: relative;
   margin-right: 28px;
 }
 
-.breadcrumbs-link::after {
+.breadcrumbs-item::after {
   position: absolute;
   right: -17px;
   top: 10px;
@@ -597,8 +595,12 @@ body {
   background: url("../images/icons/breadcrumbs-arrow-icon.svg") no-repeat center;
 }
 
-.breadcrumbs-item:last-child .breadcrumbs-link::after {
-  content:none;
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
+.breadcrumbs-item:last-child::after {
+  margin-right: 0;
 }
 
 .filter-form-title {
@@ -715,6 +717,7 @@ body {
 }
 
 .select-control {
+  position: relative;
   width: 292px;
   font-family: inherit;
   font-size: 18px;
@@ -742,6 +745,20 @@ body {
 .select-control:disabled {
   outline-color: rgba(0, 0, 0, 0.3);
 }
+
+.select-control::after {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 7px;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/icons/select-filter-arrow-icon.svg") no-repeat center;
+}
+
 .switcher-show-cards {
   background: url("../images/icons/view-icon-1.svg") no-repeat center;
 }
