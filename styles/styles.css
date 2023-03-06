@@ -166,7 +166,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  border-color: transparent;
+  border: none;
   border-radius: 4px;
 }
 
@@ -174,7 +174,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button:disabled {
+.button:disabled,
+.button:disabled:hover {
   background-color: #E5E5E5;
 }
 
@@ -409,6 +410,15 @@ body {
   line-height: 24px;
 }
 
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:active,
+.field:focus {
+  border: 2px solid #000;
+}
+
 .newsletter-subheading {
   margin-bottom: 54px;
   padding: 0 120px;
@@ -543,7 +553,7 @@ body {
 .catalog-filter {
   box-sizing: border-box;
   width: 1200px;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 78px;
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -568,15 +578,22 @@ body {
 
 .breadcrumbs-link {
   display: block;
+  font-size: 16px;
+  line-height: 21px;
   color: #fff;
   text-decoration: none;
 }
 
-.home {
-  background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat 50% 55%;
-  box-sizing: border-box;
-  width: 12px;
-  height: 26px;
+.breadcrumbs-link:hover:not(.breadcrumbs-link-current) {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus:not(.breadcrumbs-link-current) {
+  color: #fff;
+}
+
+.breadcrumbs-link:active:not(.breadcrumbs-link-current) {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item {
@@ -587,7 +604,7 @@ body {
 .breadcrumbs-item::after {
   position: absolute;
   right: -17px;
-  top: 10px;
+  top: 6px;
   content: "";
   display: block;
   width: 6px;
@@ -626,6 +643,7 @@ body {
 
 .price-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 550px;
 }
@@ -639,15 +657,28 @@ body {
 }
 
 .control {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   cursor: pointer;
 }
 
+.control:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .filter-form-group {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   border: none;
+  padding: 0;
 }
 
 .filter-form-group-price {
@@ -656,13 +687,14 @@ body {
   padding: 0;
   width: 286px;
   flex-wrap: wrap;
-  align-content: space-between;
+  align-content: flex-end;
   border: none;
   box-sizing: border-box;
 }
 
 .price-field {
   box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
   appearance: none;
   padding: 12px 20px;
   width: 142px;
@@ -671,6 +703,24 @@ body {
   font-weight: 700;
   line-height: 24px;
   color: #000;
+  margin-bottom: 36px;
+}
+
+.price-field:hover {
+  background-color: #E6E6E6;
+}
+
+.price-field:active {
+  border: 2px solid #000;
+}
+
+.price-field:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.price-field:disabled,
+.price-field:disabled:hover {
+  background-color: #E5E5E5;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -685,6 +735,74 @@ body {
   appearance: textfield;
 }
 
+.price-field-wrapper {
+  position: relative;
+}
+
+.filter-form-group-price label:first-of-type:after {
+  position: absolute;
+  display: block;
+  color: rgba(0, 0, 0, 0.3);
+  content:"от";
+  top: 12px;
+  right: 20px;
+}
+
+.filter-form-group-price label:last-of-type:after {
+  position: absolute;
+  display: block;
+  color: rgba(0, 0, 0, 0.3);
+  content:"до";
+  top: 12px;
+  right: 20px;
+}
+
+.range-scale {
+  position: relative;
+  flex-grow: 1;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: relative;
+  height: 4px;
+  background-color: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:focus {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 204px;
+}
+
 .min-price-field {
   border-radius: 4px 0 0 4px;
   border: none;
@@ -696,9 +814,9 @@ body {
   border: none;
 }
 
-.price-slider {
+/* .price-slider {
   flex-grow: 1;
-}
+} */
 
 .button-transparent {
   background-color: transparent;
@@ -794,7 +912,8 @@ body {
   outline-color: #68A2CA;
 }
 
-.select-control:disabled {
+.select-control:disabled,
+.select-control:disabled:hover {
   outline-color: rgba(0, 0, 0, 0.3);
 }
 
