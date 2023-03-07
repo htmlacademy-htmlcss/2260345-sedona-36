@@ -180,20 +180,26 @@ body {
   border-radius: 4px;
 }
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .button:disabled,
 .button:disabled:hover {
   background-color: #E5E5E5;
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-primary {
   background-color: #756157;
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-primary:focus {
   background-color: #615048;
 }
 
@@ -430,7 +436,8 @@ body {
 
 .field:active,
 .field:focus {
-  outline: 2px solid #000;
+  background-color: #E6E6E6;
+  outline: 2px solid #68A2CA;;
 }
 
 .newsletter-subheading {
@@ -478,6 +485,11 @@ body {
   background-color: #68A2CA;
 }
 
+.button-secondary:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 .page-footer {
   display: flex;
   flex-wrap: wrap;
@@ -510,6 +522,7 @@ body {
 
 .social-button:focus {
   color: #68A2CA;
+  outline: none;
 }
 
 .social-button:active {
@@ -555,6 +568,7 @@ body {
 .footer-contacts-address-phone:focus,
 .htmlacademy-link:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-contacts-address-phone:active,
@@ -781,7 +795,8 @@ body {
 }
 
 .breadcrumbs-link:focus:not(.breadcrumbs-link-current) {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
 .breadcrumbs-link:active:not(.breadcrumbs-link-current) {
@@ -868,6 +883,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.control:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .control-mark {
   position: relative;
   top: 1px;
@@ -878,16 +897,16 @@ body {
   background-color: #fff;
 }
 
-.control:hover .control-mark {
+.control-mark:hover {
   color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.control:active .control-mark {
+.control-mark:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.control:focus .control-mark {
+.control-mark:focus {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   outline: 3px solid #83B3D3;
 }
@@ -1129,6 +1148,10 @@ body {
   margin: 0;
 }
 
+.switcher-current {
+  border-color: #000;
+}
+
 .switcher:hover,
 .switcher:active {
   border-color: #000;
@@ -1136,11 +1159,10 @@ body {
 
 .switcher:focus {
   outline-color: #68A2CA;
+  border: none;
 }
 
-.switcher-current {
-  border-color: #000;
-}
+
 
 .select-control {
   appearance: none;
