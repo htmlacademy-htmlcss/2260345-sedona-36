@@ -401,6 +401,8 @@ body {
   line-height: 36px;
 }
 
+
+
 .newsletter {
   padding: 96px 258px 104px;
 }
@@ -427,7 +429,7 @@ body {
 
 .field:active,
 .field:focus {
-  border: 2px solid #000;
+  outline: 2px solid #000;
 }
 
 .newsletter-subheading {
@@ -559,6 +561,170 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  padding: 64px 70px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  outline: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.close-icon {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.search-form {
+  display: flex;
+  width: 577px;
+  gap: 48px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.search-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input {
+  width: 440px;
+  flex-grow: 0;
+  border-radius: 4px;
+  color:#000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Убирает значок стрелок в инпут */
+/* Chrome, Safari, Edge, Opera */
+.search-input::-webkit-outer-spin-button,
+.search-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Убирает значок стрелок в инпут */
+/* Firefox */
+.search-input {
+  appearance: textfield;
+}
+
+/* Убирает значок календаря в инпут */
+.search-input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.people-number .search-input {
+  width: 110px;
+}
+
+.search-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.search-input:active {
+  background-color: #F2F2F2;
+  outline: 3px solid #000;
+}
+
+.search-input-date {
+  position: relative;
+}
+
+.search-input-date::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 15px;
+  top: 16px;
+  right: 22px;
+  background: url("../images/icons/calendar-icon.svg") no-repeat center;
+}
+
+.adults-number-field {
+  margin-left: 46px;
+}
+
+.childrens-number-field {
+  margin-left: 82px;
+}
+
+.children {
+  position: relative;
+}
+
+.children::after {
+  position: absolute;
+  color: #fff;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  top: 11px;
+  left: 59px;
+  background: url("../images/icons/info-icon.svg") no-repeat center;
+  background-color: #83B3D3;
+}
+
+.search-button {
+  padding: 18px 256px;
+}
+
 .catalog-filter {
   box-sizing: border-box;
   width: 1200px;
@@ -647,7 +813,6 @@ body {
 
 .infrastructure-wrapper {
   display: flex;
-  /* justify-content: space-between; */
   gap: 70px;
 }
 
@@ -781,7 +946,6 @@ body {
 
 
 .price-field:focus {
-  border: none;
   outline: 3px solid #83B3D3;
 }
 
@@ -794,6 +958,7 @@ body {
   background-color: #E5E5E5;
 }
 
+/* Убирает значок стрелок в инпут */
 /* Chrome, Safari, Edge, Opera */
 .price-field::-webkit-outer-spin-button,
 .price-field::-webkit-inner-spin-button {
@@ -801,6 +966,7 @@ body {
   margin: 0;
 }
 
+/* Убирает значок стрелок в инпут */
 /* Firefox */
 .price-field {
   appearance: textfield;
