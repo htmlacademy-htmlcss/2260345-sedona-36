@@ -143,10 +143,10 @@
                 <fieldset class="filter-form-group-price">
                   <legend class="filter-form-title">Стоимость, ₽:</legend>
                   <label class="price-field-wrapper">
-                    <input class="price-field min-price-field" type="number" name="min-price" value="0" min="0">
+                    <input class="price-field min-price-field field" type="number" name="min-price" placeholder="0" min="0">
                   </label>
                   <label class="price-field-wrapper">
-                    <input class="price-field max-price-field" type="number" name="max-price" value="9000" min="1">
+                    <input class="price-field max-price-field field" type="number" name="max-price" placeholder="9000" min="1">
                   </label>
                   <!-- <input class="price-slider" type="range"> -->
                   <div class="range-scale">
@@ -251,7 +251,7 @@
           <!-- Pagination -->
           <ul class="pagination non-type-list">
             <li class="pagination-item">
-              <a class="button pagination-button button-big pagination-current" href="#">1</a>
+              <a class="button pagination-button button-big pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="button pagination-button button-big" href="#">2</a>
@@ -278,7 +278,7 @@
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email"></label>
-            <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
+            <input class="field newsletter-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
               required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
