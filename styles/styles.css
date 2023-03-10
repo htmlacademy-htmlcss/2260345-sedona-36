@@ -1451,6 +1451,10 @@ body {
   background: url("../images/icons/star-icon.svg") space left;
 }
 
+.star-one {
+  width: 17px;
+}
+
 .star-two {
   width: 40px;
 }
@@ -1461,6 +1465,10 @@ body {
 
 .star-four {
   width: 86px;
+}
+
+.star-five {
+  width: 109px;
 }
 
 .pagination {
