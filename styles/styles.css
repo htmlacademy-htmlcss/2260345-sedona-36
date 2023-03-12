@@ -410,11 +410,6 @@ body {
   margin: 0;
 }
 
-.newsletter-field {
-  flex-grow: 1;
-  font-weight: 400;
-}
-
 .field {
   border: transparent;
   box-sizing: border-box;
@@ -435,6 +430,11 @@ body {
 .field:focus {
   background-color: #e6e6e6;
   outline: 2px solid #68a2ca;
+}
+
+.newsletter-field {
+  flex-grow: 1;
+  font-weight: 400;
 }
 
 .newsletter-subheading {
