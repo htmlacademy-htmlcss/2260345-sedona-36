@@ -250,7 +250,7 @@ img {
 }
 
 .advantages-heading-wrapper {
-  padding: 69px 274px;
+  padding: 69px 272px;
   margin-bottom: 21px;
 }
 
@@ -793,9 +793,11 @@ img {
 .search-input {
   -webkit-appearance: textfield;
           appearance: textfield;
+  -moz-appearance: textfield;
   padding: 14px 10px;
   margin: 0;
 }
+
 
 .search-input:focus {
   outline: 3px solid #83b3d3;
@@ -1075,6 +1077,7 @@ img {
   font-family: "PT Sans", sans-serif;
   -webkit-appearance: none;
           appearance: none;
+  -moz-appearance: textfield;
   padding: 12px 20px;
   width: 142px;
   background-color: #f2f2f2;
