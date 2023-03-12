@@ -311,6 +311,19 @@
         </section>
       </div>
     </div>
+    <script>
+      const btn = document.querySelector('.modal-window-button');
+      const modal = document.querySelector('.modal-container');
+      btn.addEventListener('click', () => {
+        modal.classList.remove('modal-container-closed');
+        document.body.classList.add('overlay');
+      });
+      const closeModal = document.querySelector('.modal-close-button');
+      closeModal.addEventListener('click', () => {
+        modal.classList.add('modal-container-closed');
+        document.body.classList.remove('overlay');
+      });
+    </script>
   </body>
 
 </html>
