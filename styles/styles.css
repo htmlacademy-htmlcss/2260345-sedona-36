@@ -710,12 +710,6 @@ img {
   margin-bottom: 48px;
 }
 
-/* .people-number.children {
-  position: relative;
-  grid-column: 4/6;
-  margin-bottom: 48px;
-} */
-
 .people-title {
   align-self: center;
 }
@@ -745,6 +739,11 @@ img {
 
 .adults-number-field,
 .children-number-field {
+    -webkit-appearance: textfield;
+          appearance: textfield;
+  -moz-appearance: textfield;
+  padding: 14px 10px;
+  margin: 0;
   width: 31px;
   z-index: 1;
   border-radius: 0;
@@ -790,10 +789,6 @@ img {
   outline: none;
 }
 
-.search-input-date {
-
-}
-
 /* Убирает значок стрелок в инпут */
 /* Chrome, Safari, Edge, Opera */
 .search-input::-webkit-outer-spin-button,
@@ -801,18 +796,6 @@ img {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Убирает значок стрелок в инпут */
-/* Firefox */
-.adults-number-field,
-.children-number-field {
-  -webkit-appearance: textfield;
-          appearance: textfield;
-  -moz-appearance: textfield;
-  padding: 14px 10px;
-  margin: 0;
-}
-
 
 .search-input:focus {
   outline: 3px solid #83b3d3;
