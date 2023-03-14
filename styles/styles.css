@@ -280,18 +280,6 @@ img {
   padding-bottom: 102px;
 }
 
-/* .advantages-item-main::before {
-  display: block;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  content: "";
-  width: 60px;
-  height: 2px;
-  left: 50%;
-  top: 198px;
-  transform: translateX(-50%) translateY(-50%);
-} */
-
 .heading {
   margin-top: 0;
   margin-bottom: 20px;
@@ -302,6 +290,10 @@ img {
 
 .advantages-heading {
   margin-bottom: 25px;
+}
+
+.subheading {
+  color: #333333;
 }
 
 .advantages-subheading {
@@ -315,6 +307,10 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.advantages-services-description {
+  margin: 0;
 }
 
 .advantages-title {
@@ -446,6 +442,7 @@ img {
 }
 
 .newsletter-subheading {
+  color: inherit;
   margin-bottom: 54px;
   padding: 0 104px;
 }
@@ -660,11 +657,27 @@ img {
   grid-column: 1/6;
 }
 
-.check-in-date {
-  grid-column: 1/6;
+.search-line,
+.adult-title {
+  grid-column: 1/2;
+  align-self: center;
 }
 
-.chek-in-description {
+.search-input-date {
+  grid-column: 2/6;
+  align-self: center;
+  width: 440px;
+  flex-grow: 0;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 60px;
+  background: url("../images/icons/calendar-icon.svg") #f2f2f2 no-repeat 402px 50%;
+}
+
+.check-in-description {
   grid-column: 2/6;
 }
 
@@ -682,13 +695,14 @@ img {
   font-weight: 400;
 }
 
-.check-out-date {
-  grid-column: 1/6;
-}
-
-.chek-out-description {
+.check-out-description {
   grid-column: 2/6;
   margin-bottom: 22px;
+}
+
+.adult-number-wrapper {
+  grid-column: 2/3;
+  align-self: center;
 }
 
 .people-number.adults {
@@ -696,16 +710,11 @@ img {
   margin-bottom: 48px;
 }
 
-.people-number.children {
+/* .people-number.children {
   position: relative;
   grid-column: 4/6;
   margin-bottom: 48px;
-}
-
-.people-number {
-  display: flex;
-  justify-content: space-between;
-}
+} */
 
 .people-title {
   align-self: center;
@@ -713,12 +722,16 @@ img {
 
 .people-number-wrapper {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .children-title {
+  grid-column: 4/5;
   display: flex;
   gap: 10px;
+}
+
+.children-number-wrapper {
+  grid-column: 5/6;
 }
 
 .search-button {
@@ -727,6 +740,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   cursor: pointer;
+  margin-top: 46px;
 }
 
 .adults-number-field,
@@ -776,21 +790,8 @@ img {
   outline: none;
 }
 
-.search-line {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .search-input-date {
-  width: 440px;
-  flex-grow: 0;
-  border-radius: 4px;
-  color: #000000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  background: url("../images/icons/calendar-icon.svg") #f2f2f2 no-repeat 402px 50%;
+
 }
 
 /* Убирает значок стрелок в инпут */
@@ -895,7 +896,6 @@ img {
 
 .catalog-filter-title {
   margin: 0;
-  margin-bottom: 8px;
   font-size: 60px;
   font-weight: 78px;
   width: 494px;
@@ -905,7 +905,7 @@ img {
 .breadcrumbs {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .breadcrumbs-link {
@@ -914,6 +914,11 @@ img {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+  padding: 8px 11px 8px 11px;
+}
+
+.breadcrumbs-link:first-child {
+  padding-left: 0;
 }
 
 .breadcrumbs-link:hover:not(.breadcrumbs-link-current) {
@@ -931,13 +936,13 @@ img {
 
 .breadcrumbs-item {
   position: relative;
-  margin-right: 28px;
+  margin-right: 17px;
 }
 
 .breadcrumbs-item::after {
   position: absolute;
-  right: -17px;
-  top: 6px;
+  right: -8px;
+  top: 12px;
   content: "";
   display: block;
   width: 6px;
@@ -960,6 +965,7 @@ img {
 
 .filter-form {
   display: flex;
+  align-items: flex-start;
   gap: 150px;
 }
 
@@ -1145,6 +1151,8 @@ img {
   content: "от";
   top: 12px;
   right: 20px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .filter-form-group-price label:last-of-type::after {
@@ -1154,6 +1162,8 @@ img {
   content: "до";
   top: 12px;
   right: 20px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .range-scale {
@@ -1239,6 +1249,11 @@ img {
   outline: 3px solid #83b3d3;
 }
 
+.button-transparent:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1);
+}
+
 .catalog-hotels {
   padding: 50px 70px 60px;
 }
@@ -1258,6 +1273,7 @@ img {
 
 .select-switchers {
   display: flex;
+  min-width: 522px;
   flex-wrap: wrap;
   gap: 8px;
   position: relative;
@@ -1295,7 +1311,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
-  color: #000000;
+  color: #333333;
   border: 2px solid #e5e5e5;
   padding: 13px 20px;
   border-radius: 4px;
@@ -1306,20 +1322,21 @@ img {
 }
 
 .select-control:hover {
-  border-color: #68a2ca;
-}
-
-.select-control:active {
-  border-color: #3f5e72;
+  outline-color: #68a2ca;
 }
 
 .select-control:focus {
   outline-color: #68a2ca;
 }
 
+.select-control:active {
+  outline-color: #3f5e72;
+}
+
 .select-control:disabled,
 .select-control:disabled:hover {
   outline-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .switcher-show-cards {
@@ -1335,9 +1352,10 @@ img {
 }
 
 .hotel-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  align-items: flex-start;
   margin-bottom: 80px;
 }
 
